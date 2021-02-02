@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DedMove : MonoBehaviour
 {
+<<<<<<< Updated upstream
     float Ymove;
     public float speed;
     private Rigidbody2D fizika;
@@ -11,12 +12,33 @@ public class DedMove : MonoBehaviour
     void Start()
     {
         fizika = GetComponent<Rigidbody2D>();
+=======
+    private Rigidbody2D rb;//Rigidbody component
+    private int jumpCheker;//is Grounded
+
+    public float speed;//spid
+    public float jumpForce;//Jump spid
+    public int jumpCount;//jump kolichestvo
+
+    public float fallMultiply = 2.5f;//magic 1
+    public float lowJumpMultiply = 2.0f;//magic 2
+    
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();//Заполучение компонента
+>>>>>>> Stashed changes
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+<<<<<<< Updated upstream
         
+=======
+        Move();
+        Jump();
+        MarioJump();
+>>>>>>> Stashed changes
     }
     void FixedUpdate()
     {
@@ -25,6 +47,7 @@ public class DedMove : MonoBehaviour
         Vector2 movement = new Vector2(Xmove, Ymove);
         fizika.AddForce(movement * speed);
     }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
        Ymove = Input.GetAxis("Vertical");

@@ -58,6 +58,12 @@
     <Compile Include="Assets\Scripts\SteveMove.cs" />
     <Compile Include="Assets\Scripts\AlexMove.cs" />
     <Compile Include="Assets\Scripts\DedMove.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\2DPlatformer\Scripts\PerfectPixel.cs" />
+    <Compile Include="Assets\2DPlatformer\Scripts\DeadzoneCamera.cs" />
+    <Compile Include="Assets\Scripts\CameraMove.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
